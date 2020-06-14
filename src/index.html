@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <!-- Other CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <title>Run Smart </title>
@@ -17,7 +18,7 @@
 
 <body>
     <!-- MAIN PROMO SECTION -->
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <!-- HEADER SECTION -->
             <header class="header">
@@ -62,11 +63,11 @@
             </div>
             <!-- PROMO SECTION END -->
         </div>
-    </div>
+    </section>
     <!-- PROMO MAIN SECTION END -->
 
     <!-- MAIN ADVANTAGES SECTION -->
-    <div class="advantages">
+    <section class="advantages">
         <div class="container">
             <h2 class="title">
                 наши преимущества
@@ -106,12 +107,12 @@
                 </div>
             </div>
             <!-- ITEMS ADVANTAGES SECTION END -->
-        </div>
-    </div>
+        </di>
+    </section>
     <!-- MAIN ADVANTAGES SECTION END -->
 
     <!-- CONSULTATION SECTION -->
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
             <h2 class="consultation__header">
                 Получите бесплатную консультацию <br>по подбору
@@ -129,11 +130,41 @@
                 <button class="button button_submit">заказать консультацию</button>
             </form>
         </div>
-    </div>
+    </section>
     <!-- CONSULTATION SECTION END-->
 
+    <!-- CARUSEL SECTION -->
+    <section class="carousel">
+        <div class="container">
+            <button type="button" class="prev"><img src="icons/chevron-left.svg" alt="prev"></button>
+            <button type="button" class="next"><img src="icons/chevron-right.svg" alt="next"></button>
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/carousel/carousel_pic1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/carousel/carousel_pic2.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/carousel/carousel_pic1.jpg" alt="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION -->
+        <section class="catalog">
+            <div class="container">
+                <h2 class="title">
+                    каталог пульсометров
+                </h2>
+            </div>
+        </section>
+    <!-- CATALOG SECTION END-->
+
+
     <!-- REVIEW SECTION -->
-    <div class="review">
+    <section class="review">
         <div class="container">
             <!--  -->
             <h2 class="title">
@@ -198,7 +229,10 @@
                 </div><!-- item -->
             </div><!-- items -->
         </div> <!-- container -->
-    </div><!-- section -->
+    </section><!-- section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
