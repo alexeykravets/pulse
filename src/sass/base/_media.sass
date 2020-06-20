@@ -62,6 +62,7 @@
             font-size: 13px
             a
                 font-size: 14px
+               
     .advantages
         padding: 40px 0 40px 0
         &__items
@@ -89,20 +90,32 @@
         display: none
 
     .catalog
+        padding-top: 25px
         &-item
             min-height: 400px
             width: 200px
             padding: 20px 0 10px 0
+            &__wrapper
+                width: 200%
             &__subtitle
                 font-size: 15px
             &__descr
                 margin-top: 5px  
-                font-size: 13px  
+                font-size: 13px 
+            &__content
+                margin-right: 0
+     
             &__list
                 padding-left: 20px
+                margin-left: 0
+                min-height: 220px
                 li
                     margin-bottom: 5px
                     font-size: 13px
+            &__back
+                position: relative
+                transform: translateX(calc(-50% - 20px))
+                font-size: 10px         
             &__img
                 height: 150px
             &__footer
@@ -141,3 +154,135 @@
                 margin: 0px 5px
                 img
                     height: 20px
+
+@media ( max-width: 575px )
+    .title 
+        font-size: 19px
+    .button
+        width: 170px
+        height: 30px
+        font-size: 11px 
+        &_main
+            margin-top: 30px
+        &_catalog
+            width: 40px
+            height: 19px
+            font-size: 8px    
+    .header
+        align-items: flex-start
+        &__logo
+            width: 170px
+        &__phone
+            font-size: 13px
+        .button
+            display: none      
+    .promo
+        background: url(../img/promo_375.png)  center (center/cover) no-repeat
+        padding: 20px 0 20px 0
+        min-height: 450px
+        &__wrapper
+            margin-top: 100px  
+        &__header
+            font-size: 22px
+        &__subheader     
+            font-size: 12px
+        &__icons
+            margin-top: 20px
+            width: 280px
+            justify-content: space-evenly
+        &__icon
+            width: 85px
+            font-size: 10px
+            img
+                height: 35px
+                margin-bottom: 10px  
+        &__link
+            margin-top: 10px  
+            a
+                font-size: 11px  
+    .advantages
+        padding: 20px 0 20px 0
+        &__items
+            margin-top: 20px   
+        &__item
+            img
+                height: 50px
+        &__subtitle
+            font-size: 15px
+            margin-top: 3px
+        &__descr
+            font-size: 11px
+            margin-top: 3px
+    .consultation
+        background: url(../img/contact_375.png) center center/cover no-repeat
+        min-height: 350px
+        padding: 20px 0 20px 0
+        &__header
+            margin-bottom: 10px
+            font-size: 18px
+        &__descr
+            font-size: 14px
+    .feed-form
+        width: 250px
+        input
+            height: 30px    
+            font-style: 11px 
+
+    .review
+        &__item
+            img
+                width: 80px         
+        &__wrapper
+            margin-left: 15px
+        &__name
+            font-size: 15px
+            margin-bottom: 5px
+        &__progress
+            font-size: 11px
+            margin-bottom: 5px
+        &__text    
+            font-size: 11px
+            margin-bottom: 5px
+    .catalog
+        padding: 20px 0 20px 0
+        &__tab
+            height: 20px
+            line-height: 18px
+            font-size: 10px
+            margin: 0 2px
+        &__content    
+            margin-top: 20px
+        &-item
+            min-height: 290px
+            width: 125px
+            margin: 3px 3px
+            &__content
+            &__img
+                height: 100px
+            &__subtitle
+                font-size: 10px
+                margin-top: 5px       
+            &__descr
+                font-size: 10px
+                margin-top: 5px   
+            &__link
+                margin-top: 5px
+                font-size: 10px 
+            &__list
+                li
+                    font-size: 8px
+            hr
+                margin-top: 5px        
+            &__footer
+                margin-top: 10px
+            &__old-price
+                font-size: 10px 
+            &__price
+                font-size: 12px                
+
+
+
+
+
+    .footer__info
+        display: none       
